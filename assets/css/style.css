@@ -1042,7 +1042,7 @@ section .container {
 
 .contact .info-box p {
   padding: 0;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgb(255, 255, 255);
   line-height: 24px;
   font-size: 14px;
   margin: 0 0 0 68px;
@@ -1066,100 +1066,48 @@ section .container {
   color: #d21818;
 }
 
-.contact .php-email-form {
+/* Update or add your custom styles for the contact form */
+.contact .custom-form {
   padding: 30px;
   background: rgba(255, 255, 255, 0.08);
 }
 
-.contact .php-email-form .error-message {
-  display: none;
-  background: rgba(255, 255, 255, 0.08);
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  background: rgba(255, 255, 255, 0.08);
-  background: #d21818;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: rgba(255, 255, 255, 0.08);
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #d21818;
-  border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 0;
+.contact .custom-form input,
+.contact .custom-form textarea {
+  border-radius: 4px;
   box-shadow: none;
   font-size: 14px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #d21818; /* Add a border for better visibility */
   transition: 0.3s;
-  color: #fff;
+  color: rgb(255, 255, 255); /* Text color */
+  width: 100%; /* Make the input fields take up the full width */
+  margin-bottom: 10px; /* Add some spacing between elements */
+  padding: 10px; /* Adjust padding as needed */
 }
 
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
-  background-color: rgba(255, 255, 255, 0.11);
+.contact .custom-form input:focus,
+.contact .custom-form textarea:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none; /* Remove the default focus outline */
 }
 
-.contact .php-email-form input::-moz-placeholder,
-.contact .php-email-form textarea::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 1;
-}
-
-.contact .php-email-form input::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.3);
-  opacity: 1;
-}
-
-.contact .php-email-form input {
-  padding: 10px 15px;
-}
-
-.contact .php-email-form textarea {
-  padding: 12px 15px;
-}
-
-.contact .php-email-form button[type=submit] {
-  background: #d21818;
+.contact .custom-form button[type=submit] {
+  background: #d21818; /* Red color */
   border: 0;
   padding: 10px 30px;
   color: #fff;
   transition: 0.4s;
   border-radius: 4px;
+  cursor: pointer; /* Add a pointer cursor on hover */
 }
 
-.contact .php-email-form button[type=submit]:hover {
-  background: #d21818;
+.contact .custom-form button[type=submit]:hover {
+  background: #c71717; /* Darker red on hover */
 }
+
+/* Remove or adjust the styles related to error messages, loading, and sent messages if not needed */
+
 
 @keyframes animate-loading {
   0% {

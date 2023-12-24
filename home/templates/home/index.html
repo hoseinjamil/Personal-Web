@@ -548,10 +548,10 @@
                     <i class="bx bx-share-alt"></i>
                     <h3>Social Profiles</h3>
                     <div class="social-links">
-                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" class="github"><i class="bi bi-github"></i></a>
+                        <a href="http://linkedin.com/hoseinjamil" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        <a href="http://github.com/hoseinjamil" class="github"><i class="bi bi-github"></i></a>
                         <a href="#" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
-                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="http://instagram.com/hoseinjamil" class="instagram"><i class="bi bi-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -574,7 +574,7 @@
         </div>
 
 
-        <form method="post" action="{% url "contact" %}" class="form-group mt-4">
+        <form method="post" action="{% url "contact" %}" class="custom-form">
             {% csrf_token %}
             <div class="row">
                 <div class="col-md-6 form-group">
@@ -605,56 +605,6 @@
     </div>
 </section><!-- End Contact Section -->
 
-
-{##}
-{#        <form method="post" action="{% url 'contact' %}" class="php-email-form mt-4">#}
-{#            <!-- form fields and submit button -->#}
-{##}
-{#            {% csrf_token %}#}
-{#            <div class="row">#}
-{#                <div class="col-md-6 form-group">#}
-{#                    {% if form.name.errors %}#}
-{#                        <div class="badge-danger">{{ form.name.errors }}</div>#}
-{#                    {% endif %}#}
-{#                    {{ form.name }}#}
-{#                </div>#}
-{##}
-{#                <div class="col-md-6 form-group mt-3 mt-md-0">#}
-{#                    {% if form.email.errors %}#}
-{#                        <div class="badge-danger">{{ form.email.errors }}</div>#}
-{#                    {% endif %}#}
-{#                    {{ form.email |attr:"class:form-control"|attr:"placeholder:Email" }}#}
-{#                </div>#}
-{#            </div>#}
-{##}
-{#            <div class="form-group mt-3">#}
-{#                {% if form.subject.errors %}#}
-{#                    <div class="badge-danger">{{ form.subject.errors }}</div>#}
-{#                {% endif %}#}
-{#                {{ form.subject }}#}
-{#            </div>#}
-{##}
-{#            <div class="form-group mt-3">#}
-{#                {% if form.body.errors %}#}
-{#                    <div class="badge-danger">{{ form.body.errors }}</div>#}
-{#                {% endif %}#}
-{#                {{ form.body }}#}
-{#            </div>#}
-{##}
-{#            <div class="my-3">#}
-{#                {% if messages %}#}
-{#                    {% for message in messages %}#}
-{#                        <div class="sent-message">{{ message }}</div>#}
-{#                    {% endfor %}#}
-{#                {% endif %}#}
-{#            </div>#}
-{##}
-{#            <div class="text-center">#}
-{#                <button type="submit">Send Message</button>#}
-{#            </div>#}
-{#        </form>#}
-{#    </div>#}
-{#</section><!-- End Contact Section -->#}
 
 <small class="credits">
 
